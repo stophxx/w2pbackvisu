@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- Alias 설정 -->
+	<typeAliases>
+		<typeAlias alias="parking" type="com.where2park.biz.parking.ParkingVO"/>
+		<typeAlias alias="user" type="com.where2park.biz.user.vo.UserVO"/> 
+	</typeAliases>
+			
+	<!-- Sql Mapper 설정 -->
+	<mappers>
+		<mapper resource="mappings/parking-mapping.xml"/>
+		<mapper resource="mappings/user-mapping.xml"/>
+	</mappers>
+</configuration>
